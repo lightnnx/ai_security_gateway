@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мониторинг сети</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>AI Network Security Gateway</h1>
+    <button onclick="fetchStatus()">Обновить статус</button>
+    <div id="status"></div>
+    <script>
+        async function fetchStatus() {
+            let response = await fetch("/status");
+            let data = await response.json();
+            document.getElementById("status").innerText = JSON.stringify(data, null, 2);
+        }
+    </script>
+</body>
+</html>
