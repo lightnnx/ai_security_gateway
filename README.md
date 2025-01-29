@@ -20,6 +20,7 @@
     │   ├── preprocess.py     # Предобработка данных
     │   ├── anomaly_detection.py # Анализ ИИ
     │   ├── mitigation.py     # Устранение угроз
+    |   ├── firewall.py       # Управление iptables 
     │── web/                  # Веб-интерфейс
     │   ├── routes.py         # API эндпоинты
     │   ├── templates/        # HTML-страницы
