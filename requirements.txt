@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+scapy
+torch
+pandas
+numpy
+sklearn
+iptables-wrapper
+
+
+#pip install -r requirements.txt
